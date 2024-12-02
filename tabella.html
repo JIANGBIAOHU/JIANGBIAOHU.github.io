@@ -4,55 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tTabella con i colori</title>
+    <title>Tabella dei Colori</title>
     <style>
         table {
             width: 50%;
             border-collapse: collapse;
             margin: 20px auto;
         }
-        td {
-            width: 25%;
-            height: 100px;
+        th, td {
+            padding: 10px;
             text-align: center;
-            font-size: 20px;
-            color: white;
+            border: 1px solid #000;
         }
-        .red { background-color: red; }
-        .green { background-color: green; }
-        .blue { background-color: blue; }
-        .yellow { background-color: yellow; color: black; }
-        .orange { background-color: orange; }
-        .purple { background-color: purple; }
-        .cyan { background-color: cyan; }
-        .magenta { background-color: magenta; }
     </style>
 </head>
 <body>
+    <h1 style="text-align: center;">Tabella dei Colori</h1>
     <table>
         <tr>
-            <td class="red">Rosso</td>
-            <td class="green">Verde</td>
-            <td class="blue">Blu</td>
-            <td class="yellow">Giallo</td>
+            <th>Nome del Colore</th>
+            <th>Colore</th>
         </tr>
         <tr>
-            <td class="orange">Arancione</td>
-            <td class="purple">Viola</td>
-            <td class="cyan">Ciano</td>
-            <td class="magenta">Magenta</td>
+            <td style="color: red;">Rosso</td>
+            <td style="background-color: red;"></td>
         </tr>
         <tr>
-            <td class="red">Rosso</td>
-            <td class="green">Verde</td>
-            <td class="blue">Blu</td>
-            <td class="yellow">Giallo</td>
+            <td style="color: green;">Verde</td>
+            <td style="background-color: green;"></td>
         </tr>
         <tr>
-            <td class="orange">Arancione</td>
-            <td class="purple">Viola</td>
-            <td class="cyan">Ciano</td>
-            <td class="magenta">Magenta</td>
+            <td style="color: blue;">Blu</td>
+            <td style="background-color: blue;"></td>
+        </tr>
+        <tr>
+            <td style="color: yellow;">Giallo</td>
+            <td style="background-color: yellow;"></td>
+        </tr>
+        <tr>
+            <td style="color: orange;">Arancione</td>
+            <td style="background-color: orange;"></td>
         </tr>
     </table>
 </body>
