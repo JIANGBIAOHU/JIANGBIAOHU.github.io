@@ -1,0 +1,116 @@
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informatica - Libro d'informatica</title>
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            border: 4px solid #555;
+            background-color: #2d2d2d;
+            padding: 20px;
+        }
+
+        .header {
+            border: 4px solid #3b3b3b;
+            background-color: #4a4a4a;
+            padding: 15px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .block {
+            border: 4px solid;
+            padding: 20px;
+            background-color: #3c3c3c;
+            transition: all 0.3s ease;
+        }
+
+        .block:hover {
+            transform: scale(1.02);
+            background-color: #4e4e4e;
+            cursor: pointer;
+        }
+
+        .algoritmi {
+            border-color: #00ff00 #008000 #008000 #00ff00;
+        }
+
+        .database {
+            border-color: #ff4500 #8b0000 #8b0000 #ff4500;
+        }
+
+        .reti {
+            border-color: #1e90ff #00008b #00008b #1e90ff;
+        }
+
+        .cybersecurity {
+            border-color: #ffd700 #daa520 #daa520 #ffd700;
+        }
+
+        .ai {
+            border-color: #ff69b4 #8b008b #8b008b #ff69b4;
+        }
+
+        h2 {
+            color: #fff;
+            margin: 0 0 10px 0;
+        }
+
+        p {
+            color: #ccc;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Informatica</h1>
+            <p>Esplora informatica nel nostro libro</p>
+        </div>
+
+        <div class="grid">
+            <div class="block algoritmi">
+                <h2>Algoritmi</h2>
+                <p>Strumenti per risolvere problemi computazionali passo dopo passo</p>
+            </div>
+
+            <div class="block database">
+                <h2>Database</h2>
+                <p>Sistemi organizzati per archiviare e gestire dati strutturati</p>
+            </div>
+
+            <div class="block reti">
+                <h2>Reti</h2>
+                <p>Connessioni e protocolli per la comunicazione digitale</p>
+            </div>
+
+            <div class="block cybersecurity">
+                <h2>Cybersecurity</h2>
+                <p>Difesa dei sistemi informatici da attacchi e intrusioni</p>
+            </div>
+
+            <div class="block ai">
+                <h2>Intelligenza Artificiale</h2>
+                <p>Sistemi che simulano processi cognitivi umani</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
