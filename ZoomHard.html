@@ -1,0 +1,56 @@
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadrati Annidati</title>
+    <style>
+        .outer {
+            width: 300px;
+            height: 300px;
+            background-color: #343333; /* Grigio scuro */
+            border: 5px solid #4f4f4f; /* Bordi grigio */
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease;
+        }
+        .outer:hover {
+            transform: scale(1.1);
+        }
+        .middle {
+            width: 200px;
+            height: 200px;
+            background-color: #7f7f7f; /* Grigio */
+            border: 5px solid #bfbfbf; /* Bordi grigio chiaro */
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease;
+        }
+        .outer:hover .middle {
+            transform: scale(1.1);
+            margin: 5px;
+        }
+        .inner {
+            width: 100px;
+            height: 100px;
+            background-color: #d3d3d3; /* Grigio chiaro */
+            border: 5px solid #ffffff; /* Bordi bianchi */
+            transition: transform 0.3s ease;
+        }
+        .middle:hover .inner {
+            transform: scale(1.1);
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="middle">
+            <div class="inner"></div>
+        </div>
+    </div>
+</body>
+</html>
