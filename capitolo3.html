@@ -1,14 +1,67 @@
-<a href="copertina.html"> vai alla pagina copertina </a>
-<br>
-<a href="capitolo2.html"> vai alla pagina Capitolo2 </a>
-La codifica è come traduciamo le informazioni dal mondo reale in un linguaggio che i computer possono capire.
-Fatto con  un alfabeto di solo 0 e 1. 
-Con questi due simboli, possiamo rappresentare tutto: numeri, lettere, immagini, suoni.
-La codifica delle immagini è come prendiamo un'immagine e la trasformiamo in una serie di numeri che il computer può leggere. 
-Pixel: L'immagine è divisa in tanti quadratini piccolissimi chiamati pixel. Ogni pixel ha un colore specifico.
-Sequenza: Il computer memorizza l'immagine come una lunga sequenza di numeri che rappresentano i colori di ogni pixel.
-Valori numerici: Ogni colore è rappresentato da un numero. Ad esempio, il rosso potrebbe essere 1, il verde 2 e il blu 3.
-ASCII (American Standard Code for Information Interchange) è un sistema di codifica che 
-utilizza 128 caratteri per rappresentare lettere, numeri, simboli e caratteri di controllo.
-È un dizionario che associa ogni carattere a un numero specifico. 
-Per esempio, la lettera "A" è codificata come 65, la lettera "B" come 66, e così via.
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capitolo 3</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+        h1 {
+            font-size: 2em;
+            color: #333333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        a {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            color: #ffffff;
+            background-color: #007BFF;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
+        a:hover {
+            background-color: #0056b3;
+        }
+        p {
+            color: #333333;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Capitolo 3</h1>
+        <a href="copertina.html">Vai alla pagina Copertina</a>
+        <a href="capitolo2.html">Vai alla pagina Capitolo 2</a>
+        <p><strong>La codifica:</strong> La codifica è come traduciamo le informazioni dal mondo reale in un linguaggio che i computer possono capire. Fatto con un alfabeto di solo 0 e 1. Con questi due simboli, possiamo rappresentare tutto: numeri, lettere, immagini, suoni.</p>
+        <p><strong>Codifica delle immagini:</strong> La codifica delle immagini è come prendiamo un'immagine e la trasformiamo in una serie di numeri che il computer può leggere.</p>
+        <ul>
+            <li><strong>Pixel:</strong> L'immagine è divisa in tanti quadratini piccolissimi chiamati pixel. Ogni pixel ha un colore specifico.</li>
+            <li><strong>Sequenza:</strong> Il computer memorizza l'immagine come una lunga sequenza di numeri che rappresentano i colori di ogni pixel.</li>
+            <li><strong>Valori numerici:</strong> Ogni colore è rappresentato da un numero. Ad esempio, il rosso potrebbe essere 1, il verde 2 e il blu 3.</li>
+        </ul>
+        <p><strong>ASCII (American Standard Code for Information Interchange):</strong> ASCII è un sistema di codifica che utilizza 128 caratteri per rappresentare lettere, numeri, simboli e caratteri di controllo. È un dizionario che associa ogni carattere a un numero specifico. Per esempio, la lettera "A" è codificata come 65, la lettera "B" come 66, e così via.</p>
+    </div>
+</body>
+</html>
