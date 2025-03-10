@@ -1,0 +1,45 @@
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rettangolo con Bordo</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(255, 255, 255);
+        }
+        .outer-border {
+            width: 450px;
+            height: 100px;
+            border: 20px solid green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+        }
+        .inner-rectangle {
+            width: 450px; 
+            height: 40px; 
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 30px; 
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="outer-border">
+            <div class="inner-rectangle">
+                Sono largo 250px, bordi 10px
+            </div>
+        </div>
+    </div>
+</body>
+</html>
