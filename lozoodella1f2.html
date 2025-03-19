@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lo Zoo della 1F</title>
+    <style>
+        #guardian {
+            font-size: 50px; /* Aumenta la dimensione del guardiano */
+        }
+        .forest, .recinto {
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .road {
+            width: 20px;
+            height: 20px;
+            background-color: lightgray;
+            display: inline-block;
+        }
+        .square-border {
+            width: 240px;
+            height: 240px;
+            border: 10px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h1>Benvenuto presso lo ZOO della 1F</h1>
+    <span>In questo zoo si trovano i seguenti animali</span>
+    <ul>
+        <li>5 🐯</li>
+        <li>3 🐘​</li>
+        <li>2 🦊​</li>
+    </ul>
+    <div id="zoo">
+        <div id="guardiola">
+            <span id="guardian">💂</span>
+            <p>Ciao sono il guardiano!<br />I nostri alberi sono alti 35px; la gabbia delle 🐯 è larga circa 340px​!!<br />Oggi il cielo è light blue.</p>
+        </div>
+        <div class="forest">
+            🌴​🌳​🌲​<span class="road"></span>🌲​🌴​🌳​🌲​🌴​🌳​🌲​🌲​🌴​🌳​🌲​
+        </div>
+        <div class="recinto tiger">
+            🐯 🐯 🐯 🐯 🐯
+        </div>
+        <div class="forest">
+            🌴​🌳​🌲​🌲​🌴​🌳​🌲​🌴​🌳​🌲​🌲​🌴​🌳​🌲​
+        </div>
+        <div class="recinto elephant">
+            🐘​🐘​🐘​
+        </div>
+        <div class="forest">
+            🌴​🌳​🌲​🌲​🌴​🌳​🌲​🌴​🌳​🌲​🌲​🌴​🌳​🌲​
+        </div>
+        <div class="recinto fox">
+            🦊​🦊​​
+        </div>
+    </div>
+</body>
+</html>
