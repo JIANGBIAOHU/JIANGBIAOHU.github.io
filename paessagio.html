@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arte Cubeiforme</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        .top {
+            background-color: #87CEEB; /* Azzurro chiaro */
+            height: 60%; /* 60% dello schermo */
+            position: relative;
+        }
+        .bottom {
+            background-color: #32CD32; /* Verde */
+            height: 40%; /* 40% dello schermo */
+        }
+        .tree {
+            position: absolute;
+            bottom: -5px;
+            left: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transform: rotate(180deg);
+        }
+        .trunk {
+            width: 40px;
+            height: 80px;
+            background-color: #4f2d01; 
+        }
+        .leaves {
+            width: 80px; 
+            height: 80px; 
+            background-color: #228B22; 
+            position: relative;
+        }
+        .apple {
+            width: 10px;
+            height: 10px;
+            background-color: red;
+            position: absolute;
+            border-radius: 0%; 
+        }
+        .apple:nth-child(1) {
+            top: 5px;
+            left: 20px; 
+        }
+        .apple:nth-child(2) {
+            top: 30px;
+            right: 15px; 
+        }
+        .apple:nth-child(3) {
+            bottom: 5px;
+            left: 10px;
+        }
+        .cloud {
+            position: absolute;
+            top: 20px; /* Posiziona la nuvola nella parte superiore della sezione azzurra */
+            left: 50%; /* Centra la nuvola orizzontalmente */
+            transform: translateX(-50%);
+            display: flex;
+            align-items: center;
+        }
+        .cloud-rect {
+            background-color: #ffffff; /* Colore bianco per la nuvola */
+            border-radius: 10px; /* Angoli arrotondati */
+        }
+        .cloud-rect.medium {
+            width: 140px;
+            height: 90px;
+        }
+        .cloud-rect.large {
+            width: 200px;
+            height: 90px;
+            margin: 0 5px; /* Spaziatura tra i rettangoli */
+        }
+        .cloud-rect.small {
+            width: 140px;
+            height: 90px;
+        }
+        .cube {
+            position: absolute;
+            top: 20px; /* Posiziona il cubo in alto */
+            right: 20px; /* Posiziona il cubo a destra */
+            width: 100px;
+            height: 100px;
+            background-color: yellow; /* Colore giallo */
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="tree">
+            <div class="trunk"></div>
+            <div class="leaves">
+                <div class="apple"></div>
+                <div class="apple"></div>
+                <div class="apple"></div>
+            </div>
+        </div>
+        <div class="cloud">
+            <div class="cloud-rect medium"></div>
+            <div class="cloud-rect large"></div>
+            <div class="cloud-rect small"></div>
+        </div>
+        <div class="cube"></div> <!-- Cubo giallo -->
+    </div>
+    <div class="bottom"></div>
+</body>
+</html>
