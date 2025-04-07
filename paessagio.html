@@ -17,7 +17,7 @@
             position: relative;
         }
         .bottom {
-            background-color: #32CD32; /* Verde */
+            background-color: #118711; /* Verde */
             height: 40%; /* 40% dello schermo */
         }
         .tree {
@@ -37,7 +37,7 @@
         .leaves {
             width: 80px; 
             height: 80px; 
-            background-color: #228B22; 
+            background-color: #177817; 
             position: relative;
         }
         .apple {
@@ -65,24 +65,32 @@
             left: 50%; /* Centra la nuvola orizzontalmente */
             transform: translateX(-50%);
             display: flex;
-            align-items: center;
+            align-items: flex-start; /* Allinea i rettangoli in alto */
         }
         .cloud-rect {
             background-color: #ffffff; /* Colore bianco per la nuvola */
             border-radius: 10px; /* Angoli arrotondati */
+            position: relative;
         }
         .cloud-rect.medium {
             width: 140px;
             height: 90px;
+            z-index: 2; /* Sovrapposizione */
+            margin-top: 0px; /* Primo rettangolo in alto */
         }
         .cloud-rect.large {
             width: 200px;
             height: 90px;
-            margin: 0 5px; /* Spaziatura tra i rettangoli */
+            margin-left: -30px; /* Sovrapposizione a sinistra */
+            margin-top: 20px; /* Secondo rettangolo più in basso */
+            z-index: 1; /* Dietro il rettangolo medio */
         }
         .cloud-rect.small {
             width: 140px;
             height: 90px;
+            margin-left: -30px; /* Sovrapposizione a sinistra */
+            margin-top: -10px; /* Terzo rettangolo in alto */
+            z-index: 3; /* Davanti agli altri rettangoli */
         }
         .cube {
             position: absolute;
