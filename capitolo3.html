@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capitolo 3</title>
+    <title>Capitolo 3 - Codifiche</title>
     <style>
         body {
             background-color: #f0f0f0;
@@ -47,41 +47,62 @@
             color: #333333;
             line-height: 1.6;
         }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Capitolo 3</h1>
-        <a href="copertina.html">Vai alla pagina Copertina</a>
-        <a href="capitolo2.html">Vai alla pagina Capitolo 2</a>
-        <a href="capitolo1.html">Vai alla pagina Capitolo 1</a>
-        <a href="storia.html">Vai alla pagina Storia</a> 
-        <a href="componentiehardware.html">Vai alla pagina Componenti e Hardware</a>
-        <a href="software.html">Vai alla pagina Software</a>
-        <a href="aspettiinformatica.html">Vai alla pagina Aspetti dell'Informatica</a>                                                                                                                                                                                           
-        <p><strong>La codifica:</strong> La codifica è come traduciamo le informazioni dal mondo reale in un linguaggio che i computer possono capire. Fatto con un alfabeto di solo 0 e 1. Con questi due simboli, possiamo rappresentare tutto: numeri, lettere, immagini, suoni.</p>
-        <p><strong>Codifica delle immagini:</strong> La codifica delle immagini è come prendiamo un'immagine e la trasformiamo in una serie di numeri che il computer può leggere.</p>
+        <h1>Capitolo 3 - Codifiche</h1>
+        <a href="Indice.html">Torna all'Indice</a>
+        <p><strong>CODIFICHE:</strong> La codifica è il processo di traduzione delle informazioni dal mondo reale in un linguaggio comprensibile dai computer, utilizzando un sistema binario (0 e 1). Questo sistema consente di rappresentare numeri, lettere, immagini, suoni e video.</p>
+        
+        <h2>1) Caratteri</h2>
+        <p>I caratteri sono rappresentati utilizzando standard come ASCII e Unicode:</p>
         <ul>
-            <li><strong>Pixel:</strong> L'immagine è divisa in tanti quadratini piccolissimi chiamati pixel. Ogni pixel ha un colore specifico.</li>
-            <li><strong>Sequenza:</strong> Il computer memorizza l'immagine come una lunga sequenza di numeri che rappresentano i colori di ogni pixel.</li>
-            <li><strong>Valori numerici:</strong> Ogni colore è rappresentato da un numero. Ad esempio, il rosso potrebbe essere 1, il verde 2 e il blu 3.</li>
-            <li><strong>La Codifica:</strong> 1. Codifica delle Immagini
-                La codifica delle immagini si riferisce al modo in cui le immagini vengono rappresentate digitalmente. Ci sono due principali tecniche di codifica:
-                
-                Immagini Raster (o Bitmap): Ogni immagine è composta da una griglia di pixel, dove ogni pixel ha un valore di colore. Ad esempio, la codifica RGB (Rosso, Verde, Blu) è comune, dove ogni pixel è rappresentato da una combinazione di questi tre colori.
-                Immagini Vettoriali: Queste immagini sono rappresentate da forme geometriche e linee, il che consente di scalare l'immagine senza perdita di qualità. Sono più adatte per grafica e loghi.</li>       
-            <li><strong>Codifica Video:</strong>2. Codifica Video
-                La codifica video è il processo di compressione e conversione di un flusso video in un formato digitale. Alcuni aspetti chiave includono:
-                
-                Codec Video: Un codec (compressore-decompressore) è un software o un dispositivo che codifica e decodifica i dati video. Esempi comuni includono H.264 e MPEG-4.
-                Frame: Un video è composto da una sequenza di fotogrammi (frame), ognuno dei quali è un'immagine statica. La codifica video gestisce come questi fotogrammi vengono compressi e memorizzati.</li>
-            <li><strong>Codifica Audio:</strong>3. Codifica Audio
-                La codifica audio si riferisce al modo in cui i dati audio vengono compressi e archiviati. Ecco alcuni punti importanti:
-                
-                Codec Audio: Simile ai codec video, i codec audio (come MP3, AAC) sono utilizzati per comprimere e decomprimere i dati audio. Questi codec riducono la dimensione del file mantenendo una qualità accettabile.
-                Formati di File: L'audio può essere salvato in vari formati, ognuno con le proprie caratteristiche di qualità e compressione. Ad esempio, i file WAV sono non compressi e di alta qualità, mentre i file MP3 sono compressi e più leggeri.</li>
-            </ul>
-        <p><strong>ASCII (American Standard Code for Information Interchange):</strong> ASCII è un sistema di codifica che utilizza 128 caratteri per rappresentare lettere, numeri, simboli e caratteri di controllo. È un dizionario che associa ogni carattere a un numero specifico. Per esempio, la lettera "A" è codificata come 65, la lettera "B" come 66, e così via.</p>
+            <li><strong>ASCII:</strong> Ogni carattere è associato a un numero. Ad esempio, "A" è 65, "B" è 66. ASCII utilizza 7 bit per rappresentare 128 caratteri.</li>
+            <li><strong>Unicode:</strong> È un sistema più avanzato che supporta migliaia di caratteri, inclusi simboli e alfabeti di diverse lingue. Ad esempio, "A" è U+0041 in Unicode.</li>
+        </ul>
+        <p>Questi sistemi permettono ai computer di interpretare e visualizzare correttamente i testi.</p>
+
+        <h2>2) Immagini</h2>
+        <p>Le immagini digitali sono rappresentate come una griglia di pixel. Ogni pixel ha un colore specifico, codificato in valori numerici:</p>
+        <ul>
+            <li><strong>Codifica RGB:</strong> Ogni pixel è rappresentato da tre valori (Rosso, Verde, Blu), ciascuno con un'intensità da 0 a 255. Ad esempio, il bianco è (255, 255, 255).</li>
+            <li><strong>Compressione:</strong> Formati come JPEG riducono la dimensione del file eliminando dettagli non percepibili dall'occhio umano.</li>
+        </ul>
+        <p>Le immagini vettoriali, invece, utilizzano forme geometriche per rappresentare i dati, consentendo di scalare senza perdita di qualità.</p>
+
+        <h2>3) Video</h2>
+        <p>I video sono una sequenza di immagini (frame) riprodotte rapidamente per creare l'illusione del movimento:</p>
+        <ul>
+            <li><strong>Frame:</strong> Ogni frame è un'immagine statica. Un video a 30 FPS (frame per secondo) mostra 30 immagini al secondo.</li>
+            <li><strong>Codec:</strong> Software come H.264 e MPEG-4 comprimono i dati video per ridurre la dimensione del file mantenendo una buona qualità.</li>
+        </ul>
+        <p>La compressione video utilizza tecniche come la riduzione delle informazioni ridondanti tra i frame.</p>
+
+        <h2>4) Audio</h2>
+        <p>L'audio digitale è rappresentato come una serie di campioni numerici che descrivono l'ampiezza del suono nel tempo:</p>
+        <ul>
+            <li><strong>Campionamento:</strong> L'audio viene campionato a intervalli regolari. Ad esempio, un audio a 44.1 kHz è campionato 44.100 volte al secondo.</li>
+            <li><strong>Codec:</strong> Formati come MP3 e AAC comprimono i dati audio riducendo la dimensione del file senza compromettere troppo la qualità.</li>
+        </ul>
+        <p>Formati non compressi come WAV offrono una qualità superiore ma occupano più spazio.</p>
+
+        <h2>5) Numeri (N, Z, R)</h2>
+        <p>I numeri sono rappresentati utilizzando sistemi di numerazione posizionale:</p>
+        <ul>
+            <li><strong>Binario:</strong> Utilizza solo 0 e 1. Ad esempio, il numero 5 è rappresentato come 101 in binario.</li>
+            <li><strong>Decimale:</strong> Il sistema che utilizziamo quotidianamente, basato su 10 cifre (0-9).</li>
+            <li><strong>Esadecimale:</strong> Utilizza 16 simboli (0-9 e A-F). Ad esempio, il numero 255 è rappresentato come FF in esadecimale.</li>
+        </ul>
+        <p>Questi sistemi sono fondamentali per rappresentare dati numerici nei computer.</p>
     </div>
 </body>
 </html>
